@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "devAll": "concurrently \"cd frontend && yarn dev\" \"cd backend && python manage.py runserver\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
