@@ -6,13 +6,13 @@ export default function Home() {
   const router = useRouter();
 
   const sendWebhook = async () => {
-    const res = await fetch('http://localhost:8000/api/webhook/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ example: 'Hello from Next.js!' }),
-    });
+    // const res = await fetch('http://localhost:8000/api/webhook/', {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: JSON.stringify({ example: 'Hello from Next.js!' }),
+    // });
 
-    const data = await res.json();
+    // const data = await res.json();
     router.push('/home');
   };
 
