@@ -2,20 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Default (Light) Theme Variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F5F5F5;
+  --foreground: #545454;
+  --primary: #6D03DD;
+  --secondary: #F59F00;
+  --tertiary: #1FADFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark Theme Variables (applied when the dark class is active) */
+html.dark {
+  --background: #545454;
+  --foreground: #F5F5F5;
+  --primary: #6D03DD;
+  --secondary: #F59F00;
+  --tertiary: #1FADFF;
 }
 
+/* Global styles using the CSS variables */
 body {
-  color: var(--foreground);
   background: var(--background);
+  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
