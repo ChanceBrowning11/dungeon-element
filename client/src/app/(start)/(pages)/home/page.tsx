@@ -1,7 +1,5 @@
-'use client'
+'use client';
 
 export default function Home() {
-    return (
-        <>testing HOME</>
-    );
+  return <>testing HOME</>;
 }

@@ -1,5 +1,6 @@
-'use client'
+'use client';
 
+import { PrimaryButton } from '@/components/atoms';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
@@ -19,12 +20,9 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
       <h1 className="text-4xl font-bold mb-4">Dungeon Element</h1>
-      <button 
-        className="px-20 py-4 bg-primary text-white rounded hover:bg-secondary"
-        onClick={sendWebhook}
-      >
+      <PrimaryButton onClick={sendWebhook}>
         Enter
-      </button>
+      </PrimaryButton>
     </div>
   );
 }
