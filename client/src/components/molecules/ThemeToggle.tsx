@@ -30,7 +30,7 @@ export const ThemeToggle = () => {
   }, [isDark]);
 
   return (
-    <>
+    <div className='flex justify-center'>
       <label className='relative inline-flex cursor-pointer select-none items-center'>
         <input
           type='checkbox'
@@ -44,19 +44,21 @@ export const ThemeToggle = () => {
         <span
           className={`
             mx-4 flex h-8 w-[60px] p-1 duration-200 items-center
-            rounded-full shadow-md shadow-primary bg-accent
+            rounded-full shadow-md shadow-primary bg-background
+            hover:shadow-secondary
           `}
         >
           <span
-            className={`h-6 w-6 rounded-full bg-primary duration-200 ${
-              isDark ? 'translate-x-[28px]' : ''
-            }`}
+            className={`
+              h-6 w-6 rounded-full bg-primary duration-200
+              ${ isDark ? 'translate-x-[28px]' : ''}
+            `}
           ></span>
         </span>
         <span className='flex items-center text-foreground font-medium text-black'>
           Dark
         </span>
       </label>
-    </>
+    </div>
   )
 };

@@ -16,6 +16,11 @@ export default {
         secondary: 'var(--secondary)',
         tertiary: 'var(--tertiary)',
       },
+      borderColor: {
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        tertiary: 'var(--tertiary)',
+      },
       boxShadowColor: {
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',

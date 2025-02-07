@@ -3,7 +3,7 @@ import { ButtonProps } from './types';
 export const PrimaryButton = ({ children, onClick, styles }: ButtonProps ) =>(
   <button
     onClick={onClick}
-    className={`bg-primary text-white rounded hover:bg-secondary px-10 py-4 ${styles}`}
+    className={`${styles} bg-primary text-white rounded hover:bg-secondary px-10 py-4`}
   >
     {children}
   </button>

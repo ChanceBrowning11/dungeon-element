@@ -2,28 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Default (Light) Theme Variables */
 :root {
-  /* Light Mode Variables */
   --background: #F5F5F5;
   --accent: #CCCCCE;
-  --foreground: #2E2E2E; /* For text on light mode */
+  --foreground: #272727;
   --primary: #7543c6;
   --secondary: #F59F00;
   --tertiary: #1FADFF;
 }
 
 html.dark {
-  /* Dark Mode Variables */
-  --background: #2E2E2E;
-  --accent: #212b36;
-  --foreground: #F5F5F5; /* For text on dark mode */
+  --background: #272727;
+  --accent: #141414;
+  --foreground: #F5F5F5;
   --primary: #7543c6;
   --secondary: #F59F00;
   --tertiary: #1FADFF;
 }
 
-/* Global styles using the CSS variables */
 body {
   background: var(--background);
   color: var(--foreground);

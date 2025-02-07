@@ -31,10 +31,10 @@ export default function PagesLayout({
         <h1 className="text-xl text-primary font-bold mb-4">Dungeon Element</h1>
       </div>
       <div className="grid grid-cols-12 gap-4 h-screen">
-        <div className="col-span-2">
+        <div className="col-span-2 p-2">
           <Navbar />
         </div>
-        <div className="col-span-10 p-4">{children}</div>
+        <div className="col-span-10 px-8 py-4">{children}</div>
       </div>
     </div>
   );
