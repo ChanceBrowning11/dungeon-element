@@ -30,7 +30,7 @@ export default function PagesLayout({
       <div className="p-8">
         <h1 className="text-xl text-primary font-bold mb-4">Dungeon Element</h1>
       </div>
-      <div className="grid grid-cols-12 gap-4">
+      <div className="grid grid-cols-12 gap-4 h-screen">
         <div className="col-span-2">
           <Navbar />
         </div>

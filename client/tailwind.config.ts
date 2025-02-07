@@ -11,12 +11,29 @@ export default {
     extend: {
       backgroundColor: {
         background: 'var(--background)',
+        accent: 'var(--accent)',
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
         tertiary: 'var(--tertiary)',
       },
+      boxShadowColor: {
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        tertiary: 'var(--tertiary)',
+      },
+      colors: {
+        purple: {
+          DEFAULT: 'var(--primary)',
+        },
+        orange: {
+          DEFAULT: 'var(--secondary)',
+        },
+        blue: {
+          DEFAULT: 'var(--tertiary)',
+        },
+      },
       textColor: {
-        text: 'var(--foreground)',
+        foreground: 'var(--foreground)',
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
         tertiary: 'var(--tertiary)',

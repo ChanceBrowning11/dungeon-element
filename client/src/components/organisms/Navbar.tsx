@@ -1,14 +1,18 @@
 'use client';
 
-import { TextButton } from '@/components/atoms/buttons';
+import { TextButton } from '@/components/atoms';
+import { ThemeToggle } from '@/components/molecules';
 import { useRouter } from 'next/navigation';
 
 export const Navbar = () => {
   const router = useRouter();
   return (
-    <div className="p-4 flex flex-col">
-      <TextButton onClick={() => router.push('/home')}>Home</TextButton>
-      <TextButton onClick={() => router.push('/')}>Enter</TextButton>
+    <div className='h-[90%] flex flex-col p-4 w-full justify-between'>
+      <div className="flex flex-col">
+        <TextButton onClick={() => router.push('/home')}>Home</TextButton>
+        <TextButton onClick={() => router.push('/')}>Enter</TextButton>
+      </div>
+      <ThemeToggle />
     </div>
   );
 };

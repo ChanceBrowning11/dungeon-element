@@ -4,20 +4,23 @@
 
 /* Default (Light) Theme Variables */
 :root {
-  --background: #f5f5f5;
-  --foreground: #545454;
-  --primary: #6d03dd;
-  --secondary: #f59f00;
-  --tertiary: #1fadff;
+  /* Light Mode Variables */
+  --background: #F5F5F5;
+  --accent: #CCCCCE;
+  --foreground: #2E2E2E; /* For text on light mode */
+  --primary: #7543c6;
+  --secondary: #F59F00;
+  --tertiary: #1FADFF;
 }
 
-/* Dark Theme Variables (applied when the dark class is active) */
 html.dark {
-  --background: #545454;
-  --foreground: #f5f5f5;
-  --primary: #6d03dd;
-  --secondary: #f59f00;
-  --tertiary: #1fadff;
+  /* Dark Mode Variables */
+  --background: #2E2E2E;
+  --accent: #212b36;
+  --foreground: #F5F5F5; /* For text on dark mode */
+  --primary: #7543c6;
+  --secondary: #F59F00;
+  --tertiary: #1FADFF;
 }
 
 /* Global styles using the CSS variables */
